@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    /*border: 1px solid black;*/
+    text-align: center;
+    margin: 40px 0;
+    width: 100%;
+    font-size: 40px;
+}
+
+.box {
+    border: 1px solid black;
+    overflow: none;
+    background-color: rgba(0, 0, 0, 0.3);
+    margin: 30px;
+}
+
+.box-name {
+    border: 3px solid black;
+    inset: 100%;
+    float: right;
+    width: 35%;
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 20px;
+    overflow: none;
+    margin: 0 0 10px 0;
+    overflow: hidden;
+}
+
+.box-content {
+    /*border: 1px solid black;*/
+    clear: both;
+    padding: 10px 0 0 0;
+    font-size: 15px;
+    font-weight: bolder;
+    margin: 0 10px 10px 10px;
+}
+
+.name-1 {
+    background-color: rgb(216, 155, 175);
+    color: black;
+}
+
+.name-2 {
+    background-color: rgba(206, 27, 27, 0.842);
+    color: white;
+}
+
+.name-3 {
+    background-color: rgb(241, 223, 140);
+    color: black;
+}
+
+@media (min-width: 992px) {
+    .col-lg-4 {
+        float: left;
+        width: 33.33%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6,
+    .col-md-12 {
+        float: left;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 767px) {
+    .col-sm-12 {
+        float: left;
+    }
+    .col-sm-12 {
+        width: 100%;
+    }
+}
